@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	 <link rel="stylesheet" type="text/css" href="index.css">
+	 <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+   <script src="item.js"></script>
+   <title> Sluggy </title>
+  </head>
+
+	<body>
+
+    <h1><a href="../index.html">Sluggy</a></h1> <!--Title of site-->
+    <h2>Game Lab Check Out and Return</h2> <!--Description-->
+
+    <div class="topnav">
+      <a class="active" href="#new">New</a>
+      <a href="#allitems">All Items</a>
+      <a href="#games">Games</a>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>Super Smash Bros Ultimate</h3>
+          <img src="ssbu.jpg" width="300" height="300"><br>
+        </div>
+      </div>
+    </div>
+
+<div id="available">
+  <div>
+  <p id = "Availability">Available</p>
+
+<p id = "Prompt">Fill out below to check out.</p>
+</div>
+<div> Name: <input id = "NameField" type="text" /></div>
+<div> Email: <input id = "EmailField" type="text" /></div>
+
+<div>
+<input onclick="CheckInOut()" type="button" value="Check Out" id="Button"/></div>
+
+<div>
+<button onclick="contactCurrent()">Contact Current Borrower</button>
+<p id="current"></p>
+</div>
+
+<div>
+<button onclick="contactPrevious()">Report Missing</button>
+<p id="previous"></p>
+</div>
+
+
+  <div class="javascript">
+    <h2>Waitlist</h2>
+    <div id="input">
+      Name and Email: <input type="text" placeholder="Ex: Alex, alex@ucsc.edu"/>
+      <button>Add!</button>
+    </div>
+     <div id="output">
+    </div>
+  </div>
+
+  </div>
+
+	</body>
+
+</html>
