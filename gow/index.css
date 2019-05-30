@@ -166,3 +166,12 @@ img {
   width: 100%;
   height: auto;
 }
+
+#available {
+    width:300px;
+    height:auto;
+    position:absolute;
+    top:calc(40vh - 10px);
+    left:25vw;
+    font:lighter 25px 'Karla', calibri;
+}

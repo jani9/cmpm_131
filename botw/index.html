@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="shortcut icon" type="image/png" href="s.png"/>
+  <link rel="shortcut icon" type="image/png" href="s.png"/>
 	 <link rel="stylesheet" type="text/css" href="index.css">
 	 <link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	 <script src="index.js"></script>
+   <script src="item.js"></script>
 	 <title> Sluggy </title>
   </head>
 
@@ -21,13 +22,12 @@
     <img border="0" src="logo.png" width="250" height="100">
     </a>
   </h3>
-
     <h4>Game Lab Check Out and Return</h4> <!--Description-->
 
     <div class="topnav">
       <a href="../index.html">New</a>
       <a href="../index.html">All Items</a>
-      <a href="index.html">Games</a>
+      <a href="../games/index.html">Games</a>
       <a href="../equipment/index.html">Equipment</a>
     </div>
 
@@ -52,7 +52,7 @@
       </tr>
 
       <tr style="display:none">
-        <td><a href="../smp/index.html" class="button"> Super Mario Party</a> </label></td>
+        <td><a href="index.html" class="button"> Super Mario Party</a> </label></td>
       </tr>
 
       <tr style="display:none">
@@ -84,74 +84,47 @@
     <div class="row">
       <div class="column">
         <div class="card">
-          <h2>Legend of Zelda: Breath of the Wild</h2>
-          <a href="../botw/index.html">
+          <h2>LEGEND OF ZELDA: BREATH OF THE WILD</h2>
           <img src="botw.jpg" width="300" height="300"><br>
         </a>
         </div>
       </div>
-      <div class="column">
-        <div class="card">
-          <h2>Super Mario Odyssey</h2>
-          <a href="../smo/index.html">
-          <img src="smo.jpg" width="300" height="300"><br>
-        </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <h2>Octopath Traveler</h2>
-          <a href="../octot/index.html">
-          <img src="opt.jpg" width="300" height="300"><br>
-        </a>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <h2>God of War</h2>
-          <a href="../gow/index.html">
-          <img src="gow.jpg" width="300" height="300"><br>
-        </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <h2>Xenoblade Chronicles 2</h2>
-          <a href="../xenoc/index.html">
-          <img src="xenoc.jpg" width="300" height="300"><br>
-        </a>
-        </div>
-      </div>
     </div>
 
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <h2>Mario Kart 8 Deluxe</h2>
-          <a href="../mk8d/index.html">
-          <img src="mk8d.jpg" width="300" height="300"><br>
-        </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <h2>Kirby Star Allies</h2>
-          <a href="../ksa/index.html">
-          <img src="ksa.jpg" width="300" height="300"><br>
-        </a>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <h2>Super Mario Party</h2>
-          <a href="../smp/index.html">
-          <img src="smp.png" width="300" height="300"><br>
-        </a>
-        </div>
-      </div>
+    <div id="available">
+  <div>
+  <p id = "Availability">Available</p>
 
+<p id = "Prompt">Fill out below to check out.</p>
+</div>
+<div> Name: <input id = "NameField" type="text" /></div>
+<div> Email: <input id = "EmailField" type="text" /></div>
+
+<div>
+<input onclick="CheckInOut()" type="button" value="Check Out" id="Button"/></div>
+
+<div>
+<button onclick="contactCurrent()">Contact Current Borrower</button>
+<p id="current"></p>
+</div>
+
+<div>
+<button onclick="contactPrevious()">Report Missing</button>
+<p id="previous"></p>
+</div>
+
+
+  <div class="javascript">
+    <h2>Waitlist</h2>
+    <div id="input">
+      Name and Email: <input type="text" placeholder="Ex: Alex, alex@ucsc.edu"/>
+      <button>Add!</button>
     </div>
+     <div id="output">
+    </div>
+  </div>
+
+  </div>
 
 
 
