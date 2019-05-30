@@ -1,75 +1,39 @@
 h1 {
-    text-transform: uppercase;
-    font:lighter 40px 'Karla', calibri;
+    width:100%;
+    height:100%;
+    position: 0px 0px,
 }
 
 h2 {
   text-transform: uppercase;
-  font:lighter 20px 'Karla', calibri;
+  font:lighter 16px 'Helvetica', calibri;
   border-bottom:1px solid #ccc;
 }
 
-/* Style the top navigation bar */
-.navbar {
-  overflow: hidden; /* Hide overflow */
-  background-color: #333; /* Dark background color */
+h3 {
+  width:15%;
+  height:15%;
+  width: 300px;
+  height: 100px;
 }
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-#available {
-    width:300px;
-    height:auto;
-    position:fixed;
-    top:calc(40vh - 140px);
-    left:53vw;
-    font:lighter 25px 'Karla', calibri;
-}
-
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
-  text-align: center;
-  background-color: #f1f1f1;
-}
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+h4 {
+  text-transform: uppercase;
+  font:lighter 20px 'Helvetica', calibri;
+  border-bottom:1px solid #ccc;
 }
 
 /* Add a black background color to the top navigation bar */
 .topnav {
   overflow: hidden;
-  background-color: #e9e9e9;
+  background-color: #003c6c;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -78,7 +42,7 @@ h2 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #fdc700;
   color: black;
 }
 
@@ -155,24 +119,59 @@ function myFunction() {
   background-color: #f1f1f1;
 }
 
-
-.btn {
-  border: none;
-  background-color: inherit;
-  padding: 14px 28px;
-  font-size: 16px;
-  cursor: pointer;
-  display: inline-block;
+* {
+  box-sizing: border-box;
 }
 
-/* On mouse-over */
-.btn:hover {background: #eee;}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-.success {color: green;}
-.info {color: dodgerblue;}
-.warning {color: orange;}
-.danger {color: red;}
-.default {color: black;}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
 
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
 
-.show {display:block;}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+#available {
+    width:300px;
+    height:auto;
+    position:absolute;
+    top:calc(40vh - 10px);
+    left:25vw;
+    font:lighter 25px 'Karla', calibri;
+}
