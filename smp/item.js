@@ -10,7 +10,7 @@ function CheckInOut()
     if (available && inputName.value != "" && inputEmail.value != "")
     {
         avail.innerHTML = "Not Available";
-
+        document.getElementById("item-image").style.filter = "grayscale(100%)";
         localStorage.setItem("Borrower", inputName.value + " : " + inputEmail.value);
         inputEmail.value = "";
         inputName.value = "";
@@ -26,6 +26,7 @@ function CheckInOut()
             inputEmail.value = "";
             inputName.value = "";
             avail.innerHTML = "Available";
+            document.getElementById("item-image").style.filter = "grayscale(0%)";
             btn.value = "Check Out";
             available = true;
         }
